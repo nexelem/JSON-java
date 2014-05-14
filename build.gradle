@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+sourceSets {
+	main {
+		java {
+			srcDir("./")
+		}
+ 	}
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '1.12'
+}
