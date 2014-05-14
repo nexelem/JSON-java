@@ -1,5 +1,4 @@
 ---------------------
-
 2014-05-14 pdolega
 
 How to build and retrieve resulting jar:
@@ -10,7 +9,6 @@ How to build and retrieve resulting jar:
 2) Go to build/libs and get JSON-java.jar
 
 Prerequisites: Java 1.7
-
 ---------------------
 
 JSON in Java [package org.json]
