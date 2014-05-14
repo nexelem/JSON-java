@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+sourceSets {
+	main {
+		java {
+			srcDir("./")
+		}
+ 	}
+}
+
+jar { 
+	from configurations.runtime {
+		exclude 'gradle*'
+		exclude '.gitignore'
+		exclude 'build'	  
+        }
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '1.12'
+}
