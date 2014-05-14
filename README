@@ -1,3 +1,18 @@
+---------------------
+
+2014-05-14 pdolega
+
+How to build and retrieve resulting jar:
+
+1) Run following command in root repo directory:
+./gradlew build
+
+2) Go to build/libs and get JSON-java.jar
+
+Prerequisites: Java 1.7
+
+---------------------
+
 JSON in Java [package org.json]
 
 Douglas Crockford
