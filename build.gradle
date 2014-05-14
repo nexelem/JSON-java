@@ -8,6 +8,14 @@ sourceSets {
  	}
 }
 
+jar { 
+	from configurations.runtime {
+		exclude 'gradle*'
+		exclude '.gitignore'
+		exclude 'build'	  
+        }
+}
+
 task wrapper(type: Wrapper) {
 	gradleVersion = '1.12'
 }
