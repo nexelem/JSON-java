@@ -31,7 +31,7 @@ publishing {
 	}
 	repositories {
 		maven {
-			name "snapshots"
+			name "all-snapshots"
 			url "http://artifactory.msm.cakesolutions.net/artifactory/all-snapshot"
 		}
 	}
