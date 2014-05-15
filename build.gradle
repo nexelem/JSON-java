@@ -31,8 +31,8 @@ publishing {
 	}
 	repositories {
 		maven {
-			name "snapshots"
-			url "http://artifactory.msm.cakesolutions.net/artifactory/all-snapshot"
+			name "msm-repo"
+			url "http://artifactory.msm.cakesolutions.net/artifactory/libs-snapshot-local"
 		}
 	}
 }
