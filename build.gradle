@@ -1,4 +1,41 @@
 apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+apply plugin: 'maven-publish-auth'
+
+group = 'org.json'
+version = '1.0-fixed'
+
+buildscript {
+	dependencies {
+		classpath('org.hibernate.build.gradle:gradle-maven-publish-auth:2.0.1') {
+			exclude group: 'junit', module: 'junit'
+		}
+	}  
+	repositories {
+		maven {
+			url "http://repository.jboss.org/nexus/content/groups/public/"
+		}
+		mavenCentral()
+		mavenLocal()		
+	}
+}
+
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+			
+			artifactId 'json'
+		}
+	}
+	repositories {
+		maven {
+			name "snapshots"
+			url "http://artifactory.msm.cakesolutions.net/artifactory/all-snapshot"
+		}
+	}
+}
 
 sourceSets {
 	main {
