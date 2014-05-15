@@ -4,7 +4,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'maven-publish-auth'
 
 group = 'org.json'
-version = '1.0-fixed'
+version = '1.0-fixed-SNAPSHOT'
 
 buildscript {
 	dependencies {
